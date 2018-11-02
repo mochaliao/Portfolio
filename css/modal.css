@@ -1,0 +1,113 @@
+#noScroll {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, .9);
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	position: fixed;
+	top: 20px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+	z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+	display: none;
+}
+
+.pop-cnt {
+	text-align: center;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.pop-img {
+	/*display: inline-block;*/
+	width: 60%;
+	max-width: 400px;
+	height: auto;
+}
+
+.pop-info {
+	width: 40%;
+	color: var(--sub-color);
+	text-align: left;
+	position: relative;
+}
+.pop-info > div{
+	position: fixed;
+	padding: 60px;
+}
+.pop-title {
+	font-size: var(--web-name);
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.pop-url {
+	font-size: var(--web-url);
+}
+
+.pop-url a{
+	color: var(--sub-txt-color);
+}
+
+.pop-txt {
+	margin: 30px 0;
+	font-size: var(--font-std);
+	line-height: 1.5rem;
+	font-weight: 700;
+}
+
+.pop-txt li {
+	font-weight: 400;
+	list-style-type: square;
+	margin: 0 0 0 20px;
+}
+
+@media screen and (max-width: 480px){
+	.modal{
+		padding: 40px 20px;
+	}
+	.pop-cnt{
+		flex-flow: column-reverse;
+	}
+	.pop-info > div{
+		position: static;
+		padding: 0;
+	}
+	.pop-img,
+	.pop-info{
+		width: 100%;
+	}
+	.pop-info{
+		margin-bottom: 20px;
+	}
+}
