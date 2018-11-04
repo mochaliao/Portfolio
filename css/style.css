@@ -557,7 +557,7 @@ img {
 }
 
 .port .item-pic img {
-	transition: opacity .4s ease-out;
+	/*transition: opacity .4s ease-out;*/
 }
 
 .port .item-pic:hover > img {
