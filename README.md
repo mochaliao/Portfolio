@@ -1,2 +1,2 @@
-# portfolio2
+# portfolio
 作品集
